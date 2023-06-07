@@ -1,5 +1,22 @@
-# powerplant-coding-challenge
+# Powerplant-Coding-Challenge
 
+## Requirements
+- Python 3
+- Docker
+- Flask 
+
+## How to run in docker container 
+Build docker image 
+`docker build -t app .`
+
+Run docker image as container
+`docker run -p 8888:8888 -d app `
+
+## How to run in a local environment  
+`pip install -r requirements.txt`
+`python app.py`
+
+---
 
 ## Welcome !
 
@@ -35,7 +52,7 @@ When deciding which powerplants in the merit-order to activate (a.k.a. [unit-com
 
 ### Performing the challenge
 
-Build a REST API exposing an endpoint `/productionplan` that accepts a POST of which the body contains a payload as you can find in the `example_payloads` directory and that returns a json with the same structure as in `example_response.json` and that manages and logs run-time errors.
+Build a REST API exposing an endpoint `/  ` that accepts a POST of which the body contains a payload as you can find in the `example_payloads` directory and that returns a json with the same structure as in `example_response.json` and that manages and logs run-time errors.
 
 For calculating the unit-commitment, we prefer you not to rely on an existing (linear-programming) solver but instead write an algorithm yourself.
 
